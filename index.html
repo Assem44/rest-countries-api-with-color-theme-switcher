@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dark">
+
+    <header>
+        <div class="container">
+
+            <h2>
+                Where in the world?
+            </h2>
+
+            <div class="theme-switcher">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span for="toggleBtn">
+                    Dark Mode
+                </span>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="search-and-filter">
+
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="search" id="searchInput" placeholder="Search for a country...">
+            </div>
+
+            <div class="filter-box">
+
+                <div class="dropdown" id="regionDropdown">
+                    <div class="dropdown-header">
+                        <span id="selectedRegion">Filter by Region</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+
+                    <ul class="dropdown-menu">
+                        <li data-value="">Filter by Region</li>
+                        <li data-value="Africa">Africa</li>
+                        <li data-value="Americas">America</li>
+                        <li data-value="Asia">Asia</li>
+                        <li data-value="Europe">Europe</li>
+                        <li data-value="Oceania">Oceania</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="countries"></section>
+
+        <section class="details-page hidden">
+            <button class="
+            back-btn" id="backBtn" onclick="goBack()">
+                <i class="fa-solid fa-arrow-left-long"></i>
+                Back
+            </button>
+
+
+            <div class="content"></div>
+
+        </section>
+
+    </main>
+
+    <script src="./js/main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
